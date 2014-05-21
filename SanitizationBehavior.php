@@ -11,7 +11,7 @@ class SanitizationBehavior extends ModelBehavior
     {
         //field is the field we purify by default it is called content
         $fields = (isset($settings['fields']))?$settings['fields']: array_keys($this->Model->schema());
-        //$this->settings[$model->alias] = array('field' => $field);
+       
         $this->fields = $fields;
             //set its configuration
             $config = HTMLPurifier_Config::createDefault();
