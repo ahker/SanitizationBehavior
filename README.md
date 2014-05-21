@@ -28,7 +28,9 @@ public $actsAs = array('Sanitization' => array('fields' => array('content','web_
 
 data[model_name]['content']  as content
 del_name]['web_url']  as web_url
+
   (OR)
+  
 public $actsAs = array('Sanitization' => array('fields' => array()));
 
 its will filter all the fieds in the model.
