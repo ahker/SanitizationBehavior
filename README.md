@@ -28,10 +28,8 @@ App::import('Vendor', null, array
                 'file' => 'htmlpurifier'.DS.'library'.DS.'HTMLPurifier.auto.php'
              ));
      
-class SanitizationBehavior extends ModelBehavior
-{
-    function setup(Model $model, $settings = array())
-    {
+class SanitizationBehavior extends ModelBehavior{
+    function setup(Model $model, $settings = array()) {
         //field is the field we purify by default it is called content
         $fields = (isset($settings['fields']))?$settings['fields']: array_keys($this->Model->schema());
         //$this->settings[$model->alias] = array('field' => $field);
@@ -72,8 +70,7 @@ break;
     /*
         cleaning before saving
     */
-    function beforeSave(Model $model)
-    {
+    function beforeSave(Model $model)    {
         //convenient to get the name of the field to clean
         foreach($this->fields as $field){
         //check if we are working on the field
