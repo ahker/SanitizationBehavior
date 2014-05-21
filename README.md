@@ -27,7 +27,8 @@ example
 public $actsAs = array('Sanitization' => array('fields' => array('content','web_url')));
 
 data[model_name]['content']  as content
-del_name]['web_url']  as web_url
+
+data[model_name]['web_url']  as web_url
 
   (OR)
   
